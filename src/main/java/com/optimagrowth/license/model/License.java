@@ -1,19 +1,17 @@
 package com.optimagrowth.license.model;
 
-import org.springframework.hateoas.RepresentationModel;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
+@Getter @Setter @ToString
 @Entity
 @Table(name="licenses")
 public class License extends RepresentationModel<License> {
